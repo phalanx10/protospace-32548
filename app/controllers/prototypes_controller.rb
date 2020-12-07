@@ -1,6 +1,6 @@
 class PrototypesController < ApplicationController
   before_action :move_to_index, except: [:index, :show]
-  
+
   def index
     @prototype = Prototype.all
   end
@@ -16,6 +16,10 @@ class PrototypesController < ApplicationController
     else
       render :new
     end
+  end
+
+  def show
+    
   end
 
   private
